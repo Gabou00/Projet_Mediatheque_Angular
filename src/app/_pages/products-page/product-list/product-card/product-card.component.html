@@ -1,1 +1,183 @@
-<p>product-card works!</p>
+  <div>
+  <ul>
+    <!-- <div *ngIf="produit films"> -->
+      <li class="titre">{{ produit.nom }}</li>
+      <li class="info">Réalisateur : {{ produit.real }}</li>
+      <li class="info">Année de production : {{ produit.annee }}</li>
+      <li class="info">Résumé : {{ produit.synopsis | slice:0:102}}...</li>
+      <li class="img"><img src={{produit.img}}></li>
+      <img *ngIf="produit.img == ''" src="https://koreus.cdn.li/media/200607/12image-animal06.jpg">
+  </ul>
+    </div>
+
+
+<!-- ___________________________________________________________ -->
+
+<!-- <div class="container">
+  <div class="cellphone-container">    
+      <div class="movie">       
+        <div class="menu"><i class="material-icons"></i></div>
+        <div class="movie-imgleparrain"></div>
+        <div class="text-movie-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{ produit.nom }}</h1>
+              <ul class="movie-gen">
+                <li>{{ produit.annee }}  /</li>
+                <li>2h 49min  /</li>
+                <li>Drame, Action</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>Synopsis</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li><i class="material-icons">&#xE813;</i>{{ produit.real }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{ produit.synopsis }}</p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">Matthew McConaughey, Anne Hathaway, Jessica Chastain</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row">
+            <div class="col2"><div class="watch-btn"><h3><i class="material-icons">&#xE037;</i>Voir la Bande Annonce</h3></div>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE161;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE866;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE80D;</i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="https://dribbble.com/geehm" target="_blank">
+  <img class="dribbble-link" src="https://koreus.cdn.li/media/200607/12image-animal06.jpg">
+</a> -->
+
+
+
+<!-- ___________________________________________________________
+ Le Parain  -->
+<!--                                      
+<div class="container"> -->
+  <!-- <div class="cellphone-container">    
+      <div class="movie">       
+        <div class="menu"><i class="material-icons"></i></div>
+        <div class="movie-imgleparrain"></div>
+        <div class="text-movie-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>Le parrain</h1>
+              <ul class="movie-gen">
+                <li>1973  /</li>
+                <li>2h 49min  /</li>
+                <li>Drame, Action</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>Synopsis</h5>
+            </div>
+            <div class="col2"> -->
+               <!-- <ul class="movie-likes">
+                <li><i class="material-icons">&#xE813;</i>Francis Ford Coppola</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">En 1945, à New York, les Corleone sont une des 5 familles de la mafia. Don Vito Corleone, `parrain' de cette famille, marie sa fille à un bookmaker. Sollozzo, `parrain' de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue, mais celui-ci refuse. Sonny, un de ses fils, y est quant à lui favorable. Afin de traiter avec Sonny, Sollozzo tente de faire tuer Don Vito, mais celui-ci en réchappe.</p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">Matthew McConaughey, Anne Hathaway, Jessica Chastain</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row">
+            <div class="col2"><div class="watch-btn"><h3><i class="material-icons">&#xE037;</i>WATCH TRAILER</h3></div>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE161;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE866;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE80D;</i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="https://dribbble.com/geehm" target="_blank">
+  <img class="dribbble-link" src="https://koreus.cdn.li/media/200607/12image-animal06.jpg">
+</a> ------------------------------------------------------------------------------------------- -->
+<!-- La Cité de la Peur -->
+
+<!-- 
+<div class="container">
+  <div class="cellphone-container">    
+      <div class="movie">       
+        <div class="menu"><i class="material-icons"></i></div>
+        <div class="movie-imglacite"></div>
+        <div class="text-movie-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>La cité de la peur</h1>
+              <ul class="movie-gen">
+                <li>1994  /</li>
+                <li>1h 42min  /</li>
+                <li>Comédie, Thriller, Culte</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>Synopsis</h5>
+            </div>
+            <div class="col2">
+               <ul class="movie-likes">
+                <li><i class="material-icons">&#xE813;</i>Alain Berbérian</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">Odile Deray, attachée de presse, vient au Festival de Cannes pour présenter le film `Red is Dead'. Malheureusement, celui-ci est d'une telle faiblesse que personne ne souhaite en faire l'écho. Cependant, lorsque les projectionnistes du long-métrage en question meurent chacun leur tour dans d'étranges circonstances, `Red is dead' bénéficie d'une incroyable publicité. Serge Karamazov est alors chargé de protéger le nouveau projectionniste du film. On peut tromper mille fois mille formateurs, mais pas une fois un formateur. Non si ça on peut. </p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">Alain Chabat, Chantale Lauby, Domnique Farujia</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row">
+            <div class="col2"><div class="watch-btn"><h3><i class="material-icons">&#xE037;</i>Voir la Bande Annonce</h3></div>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE161;</i>
+            </div>
+           <div class="col6 action-btn"><i class="material-icons">&#xE866;</i>
+            </div>
+            <div class="col6 action-btn"><i class="material-icons">&#xE80D;</i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<a href="https://dribbble.com/geehm" target="_blank">
+  <img class="dribbble-link" src="https://fr.web.img2.acsta.net/pictures/19/05/03/14/30/1132544.jpg">
+</a> -->

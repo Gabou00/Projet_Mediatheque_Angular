@@ -8,12 +8,12 @@ import { Component, Input,OnInit } from '@angular/core';
 export class ProductCardComponent implements OnInit {
 
   @Input()
-  film! : string
-  albums! : string
-
+  produit : any
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
 }
